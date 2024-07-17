@@ -10,7 +10,7 @@ document.getElementById("form").addEventListener("submit", async (event) => {
     const form = document.getElementById("form");
     const formData = new FormData(form);
 
-    let res = await fetch("/user/signup", {
+    let res = await fetch("/api/user/signup", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

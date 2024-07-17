@@ -30,5 +30,5 @@ const postRoute = require("./routes/postRouter").router;
 
 // urls
 app.use("/", reqWrite, pageRoute);
-app.use("/user", reqWrite, userRoute);
+app.use("/api/user", reqWrite, userRoute);
 app.use("/post", reqWrite, postRoute);

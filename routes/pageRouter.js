@@ -5,10 +5,10 @@ const {
     getSignupPage,
     getLoginPage
 } = require("../controllers/pageController");
-const { authenticateUser } = require("../middlewares/authMiddleWare");
+const { authenticatePage } = require("../middlewares/authMiddleWare");
 
 router.route("/")
-    .get(authenticateUser, getIndexPage);
+    .get(authenticatePage, getIndexPage);
 
 router.route("/signup")
     .get(getSignupPage);
