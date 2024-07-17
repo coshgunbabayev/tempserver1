@@ -26,7 +26,9 @@ const { reqWrite } = require("./middlewares/notify");
 // routes
 const pageRoute = require("./routes/pageRouter").router;
 const userRoute = require("./routes/userRouter").router;
+const postRoute = require("./routes/postRouter").router;
 
 // urls
 app.use("/", reqWrite, pageRoute);
 app.use("/user", reqWrite, userRoute);
+app.use("/post", reqWrite, postRoute);

@@ -1,0 +1,18 @@
+body {
+    background: #232321;
+}
+
+.card {
+    border-radius: 0px;
+    transition: 0.3s;
+    border: none;
+
+    a {
+        color: initial;
+        text-decoration: none;
+    }
+
+    .text-muted i {
+        margin: 0 5px;
+    }
+}
