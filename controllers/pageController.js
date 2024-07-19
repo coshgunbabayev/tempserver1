@@ -9,9 +9,13 @@ const getSignupPage = (req, res) => {
 const getLoginPage = (req, res) => {
     res.render("login");
 };
+const getCreatePage = (req, res) => {
+    res.render("create");
+};
 
 module.exports = {
     getIndexPage,
     getSignupPage,
-    getLoginPage
+    getLoginPage,
+    getCreatePage
 };
